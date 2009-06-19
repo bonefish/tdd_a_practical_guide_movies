@@ -1,0 +1,284 @@
+/*
+Design by Free CSS Layouts
+http://www.free-css-layouts.com
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Ocean
+Released   : 2009/03/02
+
+*/
+
+/* Body */
+
+body
+{ 
+background: url( ../images/background.jpg ) repeat-x top left; 
+}
+
+*
+{ 
+margin: 0px; 
+padding: 0px;
+}
+
+a
+{
+text-decoration: none;
+}
+a:hover
+{ 
+text-decoration: underline; 
+}
+img
+{
+border: none;
+}
+
+
+/* Header */
+
+#header_style
+{ 
+height: 127px; 
+}
+
+#header_style img
+{
+float: left;  
+margin: 6px 0px 0px 20px;
+width:222px; 
+height:111px; 
+}
+
+#header_style 
+#rightmenu
+{ 
+float: right; 
+margin-top: 87px; 
+margin-right: 50px; 
+height: 37px; 
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+font-size: 18px; 
+line-height: 35px; 
+}
+
+#header_style
+#rightmenu a
+{ 
+color:#ffffff; 
+margin-right: 20px; 
+}
+
+#header_style
+#rightmenu a:hover
+{ 
+height: 46px; 
+background: url( ../images/menuhover.jpg ) repeat-x;
+}
+
+#logo 
+{
+position: absolute; 
+top: 30px; 
+left: 85px; 
+font-size: 1.8em; 
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+font-style: italic;  
+color:#1B72A4;
+}
+
+#logo a
+{
+position: absolute; 
+top: 30px; 
+left: -15px; 
+font-size: 12px; 
+width: 222px; 
+color:#F67777;
+}
+
+/* Categories */
+
+#categ,#message 
+{
+color: #5E5C5C; 
+font-size: 18px; 
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+font-weight: bold; 
+padding-left: 10px;
+}
+
+/* Page */
+
+#page, #page_table
+{
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+font-size: 13px;
+font-weight: normal;
+color: #6B6E71;
+padding-top: 20px;
+padding-left:17px;
+padding-right:17px;
+}
+
+#page h1
+{
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+font-size: 1.8em;
+font-weight: normal;
+color: #145994;
+border-bottom: 1px solid #E7E9EB;
+}
+
+#page a
+{
+color: #1A7AFC;
+}
+#page a:visited
+{
+color: #1A7AFC;
+}
+
+/* Legal */
+
+#legal
+{
+background: #E9EEF1;
+padding: 3px 3px 3px 3px;
+}
+
+/* Wrapper */
+
+#main
+{
+background-color: #ffffff; 
+margin: 0px auto; 
+width: 935px; 
+/* height: 1050px; */
+border-bottom: 1px solid #DAEDFD;  
+border-left: 1px solid #DAEDFD;  
+border-right: 1px solid #DAEDFD;  
+padding: 20px 16px 25px 16px;  
+margin-bottom: 10px; 
+}
+
+#leftmenu
+{ 
+float:left; 
+/* background: url( ../images/sidebar-bg.gif ) no-repeat top left; 
+ */
+background: url( ../images/sidebar-bg.gif ) repeat-y top left;
+width: 181px; 
+/*height: 658px;*/ 
+padding: 5px;  
+margin-bottom: 10px; 
+}
+
+#bg-left
+{ 
+float: left;
+width: 179px; 
+height: 658px; 
+background: url( ../images/back-meniu.png ) no-repeat top left; 
+}
+
+#bg-left .a
+{ 
+float: left; 
+height:6px; 
+width:179px; 
+}
+
+
+#bg-left 
+#sidebar
+{ 
+float: left; 
+width: 169px; 
+padding: 0px 5px 0px 5px; 
+}
+
+#sidebar 
+{ 
+float:left;
+height: 25px; 
+width:160px; 
+}
+
+#sidebar ul
+{ 
+/* float:left; */
+width:169px; 
+border-bottom: 1px solid #D0DCC7; 
+list-style: none; 
+margin-top: 10px; 
+}
+
+#sidebar ul li
+{ 
+width:164px; 
+border-top: 1px solid #D0DCC7; 
+padding-left: 5px; 
+}
+
+#sidebar ul li a, #infopanel ul li a
+{ 
+line-height: 24px; 
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+color: #166998; 
+font-size: 14px; 
+font-weight: bold; 
+background: url( ../images/li.gif ) no-repeat center left; 
+padding-left: 11px; 
+}
+
+#sidebar .b
+{ 
+margin: 20px auto; 
+border-width: 0px; 
+}
+
+#sidebar p
+{ 
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+font-size: 12px ; 
+margin:5px; 
+}
+
+
+/* Content */
+#content_ocean
+{ 
+float: left; 
+width:734px; 
+/*height: 642px;*/ 
+margin-top: 20px; 
+margin-bottom: 10px; 
+background: url( ../images/content.jpg ) repeat-x ; 
+border-left: 1px solid #E7E9EB; 
+border-right: 1px solid #E7E9EB;
+}
+
+/* Footer */
+#footer
+{ 
+clear:both;
+background: url( ../images/footer.jpg ) repeat-x; 
+width:100%; 
+height: 50px; 
+margin: 0px auto; 
+}
+
+#footer-text, .categ_header 
+{
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+font-size:14px; 
+color:#53728C; 
+text-align: center; 
+padding-top: 10px;
+}
+
+#footer-text a
+{
+color: #1A7AFC;
+}
