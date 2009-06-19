@@ -1,0 +1,15 @@
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-18 22:44:17) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:29:in `call'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:29:in `call'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:9:in `cache'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:28:in `call'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
