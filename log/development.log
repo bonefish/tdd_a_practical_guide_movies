@@ -84,3 +84,96 @@ Migrating to CreateMovies (20090619055156)
 [0m
   [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
   [4;36;1mSQL (1.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090619055156')[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-18 22:59:14) [GET]
+
+ActionController::RoutingError (No route matches "/movies" with {:method=>:get}):
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:29:in `call'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:29:in `call'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:9:in `cache'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:28:in `call'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-18 23:02:51) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:29:in `call'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:29:in `call'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:9:in `cache'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:28:in `call'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-18 23:02:56) [GET]
+
+NameError (uninitialized constant MoviesController):
+  /Users/kerry/.gem/ruby/1.8/gems/activesupport-2.3.1/lib/active_support/dependencies.rb:443:in `load_missing_constant'
+  /Users/kerry/.gem/ruby/1.8/gems/activesupport-2.3.1/lib/active_support/dependencies.rb:80:in `const_missing'
+  /Users/kerry/.gem/ruby/1.8/gems/activesupport-2.3.1/lib/active_support/dependencies.rb:92:in `const_missing'
+  /Users/kerry/.gem/ruby/1.8/gems/activesupport-2.3.1/lib/active_support/inflector.rb:359:in `constantize'
+  /Users/kerry/.gem/ruby/1.8/gems/activesupport-2.3.1/lib/active_support/inflector.rb:358:in `each'
+  /Users/kerry/.gem/ruby/1.8/gems/activesupport-2.3.1/lib/active_support/inflector.rb:358:in `constantize'
+  /Users/kerry/.gem/ruby/1.8/gems/activesupport-2.3.1/lib/active_support/core_ext/string/inflections.rb:162:in `constantize'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:29:in `call'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:29:in `call'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:9:in `cache'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:28:in `call'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (37.6ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-18 23:03:47) [GET]
+
+NameError (uninitialized constant MoviesController):
+  /Users/kerry/.gem/ruby/1.8/gems/activesupport-2.3.1/lib/active_support/dependencies.rb:443:in `load_missing_constant'
+  /Users/kerry/.gem/ruby/1.8/gems/activesupport-2.3.1/lib/active_support/dependencies.rb:80:in `const_missing'
+  /Users/kerry/.gem/ruby/1.8/gems/activesupport-2.3.1/lib/active_support/dependencies.rb:92:in `const_missing'
+  /Users/kerry/.gem/ruby/1.8/gems/activesupport-2.3.1/lib/active_support/inflector.rb:359:in `constantize'
+  /Users/kerry/.gem/ruby/1.8/gems/activesupport-2.3.1/lib/active_support/inflector.rb:358:in `each'
+  /Users/kerry/.gem/ruby/1.8/gems/activesupport-2.3.1/lib/active_support/inflector.rb:358:in `constantize'
+  /Users/kerry/.gem/ruby/1.8/gems/activesupport-2.3.1/lib/active_support/core_ext/string/inflections.rb:162:in `constantize'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:29:in `call'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:29:in `call'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:9:in `cache'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:28:in `call'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (89.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2009-06-18 23:04:21) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: ):
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:29:in `call'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:29:in `call'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:9:in `cache'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/query_cache.rb:28:in `call'
+  /Users/kerry/.gem/ruby/1.8/gems/activerecord-2.3.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
