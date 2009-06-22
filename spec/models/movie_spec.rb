@@ -10,4 +10,5 @@ describe Movie do
   it "should create a new instance given valid attributes" do
     Movie.create!(@valid_attributes)
   end
+
 end
