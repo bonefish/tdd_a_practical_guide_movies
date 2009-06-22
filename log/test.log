@@ -42,3 +42,44 @@ Processing MoviesController#list (for 0.0.0.0 at 2009-06-18 23:34:24) [GET]
 Rendering template within layouts/application
 Rendering list
 Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/movies/list]
+ActiveScaffold: extending RESTful routes for movies
+
+
+Processing MoviesController#index (for 0.0.0.0 at 2009-06-22 10:26:27) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "movies" [0m
+  [4;35;1mMovie Load (0.1ms)[0m   [0mSELECT "movies".* FROM "movies" ORDER BY movies."id" ASC LIMIT 15 OFFSET 0[0m
+  [4;36;1mMovie Load (0.1ms)[0m   [0;1mSELECT "movies".* FROM "movies" ORDER BY movies."id" ASC LIMIT 15 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering list
+Completed in 226ms (View: 170, DB: 0) | 200 OK [http://test.host/movies]
+
+
+Processing MoviesController#list (for 0.0.0.0 at 2009-06-22 10:26:28) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "movies" [0m
+  [4;36;1mMovie Load (0.1ms)[0m   [0;1mSELECT "movies".* FROM "movies" ORDER BY movies."id" ASC LIMIT 15 OFFSET 0[0m
+  [4;35;1mMovie Load (0.1ms)[0m   [0mSELECT "movies".* FROM "movies" ORDER BY movies."id" ASC LIMIT 15 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering list
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/movies/list]
+ActiveScaffold: extending RESTful routes for movies
+  [4;36;1mMovie Create (0.5ms)[0m   [0;1mINSERT INTO "movies" ("name", "updated_at", "created_at") VALUES('Star Wars', '2009-06-22 17:26:37', '2009-06-22 17:26:37')[0m
+ActiveScaffold: extending RESTful routes for movies
+ActiveScaffold: extending RESTful routes for movies
+
+
+Processing MoviesController#index (for 0.0.0.0 at 2009-06-22 10:41:57) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "movies" [0m
+  [4;35;1mMovie Load (0.2ms)[0m   [0mSELECT "movies".* FROM "movies" ORDER BY movies."id" ASC LIMIT 15 OFFSET 0[0m
+  [4;36;1mMovie Load (0.1ms)[0m   [0;1mSELECT "movies".* FROM "movies" ORDER BY movies."id" ASC LIMIT 15 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering list
+Completed in 126ms (View: 119, DB: 0) | 200 OK [http://test.host/movies]
+
+
+Processing MoviesController#list (for 0.0.0.0 at 2009-06-22 10:41:57) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "movies" [0m
+  [4;36;1mMovie Load (0.1ms)[0m   [0;1mSELECT "movies".* FROM "movies" ORDER BY movies."id" ASC LIMIT 15 OFFSET 0[0m
+  [4;35;1mMovie Load (0.1ms)[0m   [0mSELECT "movies".* FROM "movies" ORDER BY movies."id" ASC LIMIT 15 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering list
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/movies/list]
