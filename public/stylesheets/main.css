@@ -3,7 +3,7 @@ color: #333;
 font-family: arial, sans-serif;
 font-size: 10px;
 line-height: 180%;
-background: #fff url(../images/background.png) repeat-x;
+/* background: #fff url(../images/background.png) repeat-x; */
 }
 
 a {
