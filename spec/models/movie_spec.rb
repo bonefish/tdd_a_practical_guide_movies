@@ -18,5 +18,10 @@ describe Movie do
   it "should not be valid when these is no data" do
     Movie.new.should_not be_valid
   end
+  
+  it "should have an error on name when there is no data" do
+    Movie.new.should_not be_valid
+    Movie.new.should have(1).error_on(:name)
+  end
 
 end
