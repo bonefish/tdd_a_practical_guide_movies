@@ -15,15 +15,28 @@ describe Movie do
     Movie.new(@valid_attributes).should be_valid
   end
 
-  it "should not be valid when these is no data" do
+  it "should not be valid when these is nil data - Test 10" do
     Movie.new.should_not be_valid
   end
+
+  it "should not be valid when the name is an empty string - Test 11" do
+    m=Movie.new
+    m.name=""
+    m.should_not be_valid
+  end
   
-  it "should have an error on name when there is no data" do
+  it "should have an error on name when there is no data - Test 10" do
     Movie.new.should_not be_valid
     Movie.new.should have(1).error_on(:name)
   end
   
+  it "should have an error on name when the name is an empty string - Test 11" do
+    m=Movie.new
+    m.name=""
+    m.should_not be_valid
+    m.should have(1).error_on(:name)
+  end
+
   it "should be able to be renamed - Test 9" do
     movie = Movie.create!(@valid_attributes)
     @new_name = "new name"
