@@ -29,4 +29,10 @@ shared_examples_for "All AS Controllers" do
     response.should render_template("update")    
   end  
 
+  it "should render for new" do
+    get :new
+    response.should be_success
+    response.should render_template("create")    
+  end
+
 end
