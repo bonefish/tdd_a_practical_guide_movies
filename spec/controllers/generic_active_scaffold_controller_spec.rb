@@ -16,4 +16,5 @@ shared_examples_for "All AS Controllers" do
     response.should be_success
     response.should render_template("list")    
   end  
+
 end

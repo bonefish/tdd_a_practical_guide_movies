@@ -3,12 +3,12 @@ Feature: Movies
   People should be able to
   Create a list of movies
 
-Scenario: List Movies
+Scenario: List Movies (Test 7)
   Given that I have created a movie "Star Wars"
   When I go to the movies page
   Then I should see "Star Wars"
 
-Scenario: Add a Movie
+Scenario: Add a Movie (Test 8)
   When I go to the movies page
   When I follow "Create New"
   When I fill in "Name" with "Star Wars"
@@ -17,7 +17,6 @@ Scenario: Add a Movie
   And I should see "Star Wars"
   And I should not see "prohibited this movie from being saved"
   And I should not see "problems with the following fields"
-
 
 Scenario: Edit a Movie
   Given that I have created a movie "Star Wars"
