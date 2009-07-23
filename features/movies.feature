@@ -34,14 +34,15 @@ Scenario: Show a Movie
   And I should see "Name"
   And I should see "Star Wars"
 
-Scenario: After Editing I return to the movie list
+Scenario: After Editing I return to the movie list (Test 9)
   Given that I have created a movie "Star Wars"
   When I go to the movies page
   When I follow "Edit"
-  And I fill in "name" with "Star Wars II"
+  And I fill in "name" with "A New Name"
   And I press "Update"
   Then I should see "Movies"
-  And I should see "Star Wars II"
+  And I should see "A New Name"
+  And I should not see "Star Wars"
   And I should not see "prohibited this movie from being saved"
   And I should not see "problems with the following fields"
 
