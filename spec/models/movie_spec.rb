@@ -20,9 +20,9 @@ describe Movie do
   end
 
   it "should not be valid when the name is an empty string - Test 11" do
-    m=Movie.new
-    m.name=""
-    m.should_not be_valid
+    movie=Movie.new
+    movie.name=""
+    movie.should_not be_valid
   end
   
   it "should have an error on name when there is no data - Test 10" do
@@ -31,10 +31,10 @@ describe Movie do
   end
   
   it "should have an error on name when the name is an empty string - Test 11" do
-    m=Movie.new
-    m.name=""
-    m.should_not be_valid
-    m.should have(1).error_on(:name)
+    movie=Movie.new
+    movie.name=""
+    movie.should_not be_valid
+    movie.should have(1).error_on(:name)
   end
 
   it "should be able to be renamed - Test 9" do
@@ -43,6 +43,20 @@ describe Movie do
     movie.name = @new_name 
     movie.save.should be_true
     movie.name.should equal(@new_name)
+  end
+  
+  it "should not be able to be renamed to a null name - Test 12" do
+    movie = Movie.create!(@valid_attributes)
+    @new_name = nil
+    movie.name = @new_name 
+    movie.should_not be_valid
+  end
+
+  it "should not be able to be renamed to a blank name - Test 13" do
+    movie = Movie.create!(@valid_attributes)
+    @new_name = ""
+    movie.name = @new_name 
+    movie.should_not be_valid
   end
 
 end
