@@ -17,4 +17,16 @@ shared_examples_for "All AS Controllers" do
     response.should render_template("list")    
   end  
 
+  it "should render for show" do
+    get :show, :id=>@id
+    response.should be_success
+    response.should render_template("show")    
+  end  
+
+  it "should render for update" do
+    get :edit, :id=>@id
+    response.should be_success
+    response.should render_template("update")    
+  end  
+
 end
